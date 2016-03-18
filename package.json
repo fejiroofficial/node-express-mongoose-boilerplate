@@ -1,0 +1,44 @@
+{
+  "name": "nodeBoilerplate",
+  "version": "0.1.0",
+  "author": "Jennifer Bland",
+  "description": "Boilerplate to create a node.js, server using express.js and mongoose for access to mongodb database",
+  "private": true,
+  "scripts": {
+    "start": "node boilerplate",
+    "test": "mocha ./test"
+  },
+  "keywords": [
+    "Node.js",
+    "express.js",
+    "mongodb",
+    "mongoose",
+    "node boilerplate"
+  ],
+  "license": "MIT License",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "config": "^1.19.0",
+    "cors": "^2.7.1",
+    "debug": "~2.2.0",
+    "errorhandler": "^1.4.3",
+    "express": "~4.13.1",
+    "lodash": "^4.6.1",
+    "minami": "^1.1.1",
+    "mongoose": "^4.4.7",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^0.4.5",
+    "grunt-apidoc": "^0.11.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jscs": "^2.8.0",
+    "grunt-jsdoc": "^1.1.0",
+    "grunt-mocha-test": "^0.12.7",
+    "load-grunt-tasks": "^3.4.1",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  }
+}

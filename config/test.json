@@ -1,0 +1,13 @@
+{
+  "port": 3001,
+  "mongodb": {
+    "instances": [
+      {
+        "host": "localhost",
+        "port": 27017
+      }
+    ],
+    "db": "example-test",
+    "options": {}
+  }
+}
