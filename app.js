@@ -7,6 +7,7 @@ var cors = require('cors');
 var errorHandler = require('errorhandler');
 var config = require('config');
 var routes = require('./routes');
+var expressLogger = require('./lib/meta-logger')('YourAppName').expressLogger;
 
 var app = express();
 
@@ -20,10 +21,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(errorHandler());
 app.use(cors());
+app.use(expressLogger);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
-
 
 module.exports = app;

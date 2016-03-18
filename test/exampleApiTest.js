@@ -1,3 +1,7 @@
+// ensure the NODE_ENV is set to 'test'
+// this is helpful when you would like to change behavior when testing
+process.env.NODE_ENV = 'test';
+
 var testUtils = require('./testUtils');
 var app = require('../app.js');
 var request = require('supertest')(app);
